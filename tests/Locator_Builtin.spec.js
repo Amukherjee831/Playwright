@@ -12,7 +12,7 @@ test('Builtin Locators',async({page})=>{
     await page.locator("//p[@class='oxd-userdropdown-name']").toBeVisible
     const name=page.locator("//p[@class='oxd-userdropdown-name']").textContent
     console.log(name);
-    //await expect(page.getByText(name)).toBeVisible()    
+    await expect(page.getByText(name)).toBeVisible()    
 
 })
 
